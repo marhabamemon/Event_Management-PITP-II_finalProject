@@ -10,6 +10,7 @@ A full-stack MERN application for managing events, including user authentication
 - Event creation and management for organizers
 - Template system for event creation
 - Admin dashboard for user and event management
+- About Us, Services, Support, and Contact pages
 - Responsive UI with plain CSS
 
 ## Tech Stack

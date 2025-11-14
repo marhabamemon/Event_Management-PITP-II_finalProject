@@ -18,6 +18,18 @@ const Header = () => {
         </Link>
 
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+          <Link to="/about" style={{ color: 'white', textDecoration: 'none' }}>
+            About Us
+          </Link>
+          <Link to="/services" style={{ color: 'white', textDecoration: 'none' }}>
+            Services
+          </Link>
+          <Link to="/support" style={{ color: 'white', textDecoration: 'none' }}>
+            Support
+          </Link>
+          <Link to="/contact" style={{ color: 'white', textDecoration: 'none' }}>
+            Contact
+          </Link>
           {token ? (
             <>
               <Link to="/dashboard" style={{ color: 'white', textDecoration: 'none' }}>

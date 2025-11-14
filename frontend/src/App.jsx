@@ -11,6 +11,10 @@ import Dashboard from './pages/Dashboard'
 import OrganizerDashboard from './pages/OrganizerDashboard'
 import AdminDashboard from './pages/AdminDashboard'
 import CreateEditEvent from './pages/CreateEditEvent'
+import AboutUs from './pages/AboutUs'
+import Services from './pages/Services'
+import Support from './pages/Support'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -28,6 +32,10 @@ function App() {
           <Route path="/admin" element={<ProtectedRoute roles={['admin']}><AdminDashboard /></ProtectedRoute>} />
           <Route path="/create-event" element={<ProtectedRoute roles={['organizer']}><CreateEditEvent /></ProtectedRoute>} />
           <Route path="/edit-event/:id" element={<ProtectedRoute roles={['organizer']}><CreateEditEvent /></ProtectedRoute>} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />
